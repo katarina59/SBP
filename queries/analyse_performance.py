@@ -605,7 +605,7 @@ performance_data_post = collect_performance_data_opt(queries_post_optimization)
 df_pre = pd.DataFrame(performance_data_pre)
 df_post = pd.DataFrame(performance_data_post)
 
-# VDATA VISUALIZATION
+# DATA VISUALIZATION
 fig, axes = plt.subplots(2, 2, figsize=(15, 10))
 df_pre.plot(kind='bar', x='Query', y='Execution Time (ms)', ax=axes[0, 0], title='Execution Time (Pre vs Post)')
 df_post.plot(kind='bar', x='Query', y='Execution Time (ms)', ax=axes[0, 1], title='Execution Time (Post)')
